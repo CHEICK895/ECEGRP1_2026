@@ -1,1 +1,168 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Premier Site Web</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            color: #222;
+        }
+
+        header {
+            background: #171c38;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #55d6be;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #55d6be;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #171c38, #5145cd);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #55d6be;
+            color: #171c38;
+            padding: 14px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .services {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            width: 280px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #00000012;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #5145cd;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #171c38;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>TECHVISION</h1>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="accueil">
+        <h2>Bienvenue dans le futur !</h2>
+        <p>Découvrez un univers où technologie, innovation et créativité se rencontrent.</p>
+        <a href="#services" class="btn">Découvrir nos services</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Nos Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>💻 Développement Web</h3>
+                <p>Nous créons des sites web modernes, rapides et adaptés à tous les écrans.</p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 Intelligence Artificielle</h3>
+                <p>Nous utilisons l'intelligence artificielle pour créer des solutions innovantes.</p>
+            </div>
+
+            <div class="card">
+                <h3>📊 Data Analytics</h3>
+                <p>Nous transformons les données en informations utiles pour les entreprises.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 TECHVISION - Tous droits réservés.</p>
+        <p>Contact : contact@techvision.com</p>
+    </footer>
+
+</body>
+</html>
+
